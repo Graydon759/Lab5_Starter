@@ -40,7 +40,7 @@ function init() {
   }
 
   talkButton.addEventListener('click', function(){
-    if(!inputText)
+    if(!inputText || voiceSelect.selectedIndex === 0)
       return;
     //console.log(inputText.placeholder);
     let utterThis = new SpeechSynthesisUtterance(inputText.value);
