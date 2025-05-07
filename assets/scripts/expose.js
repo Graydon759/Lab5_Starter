@@ -70,5 +70,3 @@ function init() {
   })
   
 }
-
-init();
